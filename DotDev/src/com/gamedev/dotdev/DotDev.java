@@ -4,6 +4,7 @@ import com.esotericsoftware.minlog.Log;
 import com.gamedev.dotdev.gui.GuiMainMenu;
 import com.remote.remote2d.engine.Remote2D;
 import com.remote.remote2d.engine.Remote2DGame;
+import com.remote.remote2d.engine.art.Fonts;
 
 public class DotDev extends Remote2DGame {
 	
@@ -15,6 +16,7 @@ public class DotDev extends Remote2DGame {
 
 	@Override
 	public void initGame() {
+		Fonts.add("Courier New", "res/fonts/courier.ttf", true);
 		Remote2D.guiList.push(new GuiMainMenu());
 	}
 	
